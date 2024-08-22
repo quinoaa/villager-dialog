@@ -14,9 +14,7 @@ Ex: `data/datapack/dialogs/(id).json`
 
 ### format
 
-A dialog follows a scheme. 
-
-Here, 
+A dialog follows a scheme: [Example](https://github.com/quinoaa/villager-dialog/tree/main/src/main/resources/data/villagerdialog/dialogs)
 
 ```json
 {

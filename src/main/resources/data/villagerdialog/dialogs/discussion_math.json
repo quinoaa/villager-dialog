@@ -11,6 +11,12 @@
             "text": "No, go away !"
           },
           "goto": "no"
+        },
+        {
+          "dialog": {
+            "text": "I can try"
+          },
+          "goto": "yes"
         }
       ]
     },
