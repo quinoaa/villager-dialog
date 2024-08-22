@@ -1,0 +1,51 @@
+{
+  "first": "root",
+  "dialogs": {
+    "root": {
+      "dialog": {
+        "text": "I'm wondering about what I should eat. "
+      },
+      "choices": [
+        {
+          "dialog": {
+            "text": "I don't know."
+          },
+          "goto": "ok"
+        },
+        {
+          "dialog": {
+            "text": "There is a restaurant nearby"
+          },
+          "goto": "good"
+        },
+        {
+          "dialog": {
+            "text": "You should eat some insects ! It has many nutriments !"
+          },
+          "goto": "weird"
+        },
+        {
+          "dialog": {
+            "text": "Try making some burgers !"
+          },
+          "goto": "good"
+        }
+      ]
+    },
+    "ok": {
+      "dialog": {
+        "text": "That's okay"
+      }
+    },
+    "weird": {
+      "dialog": {
+        "text": "That's an interesting idea..."
+      }
+    },
+    "good": {
+      "dialog": {
+        "text": "Yeah, that's perfect ! Thank you ! That's making me hungry !"
+      }
+    }
+  }
+}

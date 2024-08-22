@@ -1,0 +1,41 @@
+{
+  "first": "root",
+  "dialogs": {
+    "root": {
+      "dialog": {
+        "text": "Do you want a math quiz ?"
+      },
+      "choices": [
+        {
+          "dialog": {
+            "text": "No, go away !"
+          },
+          "goto": "no"
+        }
+      ]
+    },
+    "no": {
+      "dialog": {
+        "text": "I'm feeling lonely :'("
+      }
+    },
+    "yes": {
+      "dialog": {
+        "text": "What is the solution for the equation x^y + y^x = 11 ?"
+      },
+      "choices": [
+        {
+          "dialog": {
+            "text": "I have no idea"
+          },
+          "goto": "end"
+        }
+      ]
+    },
+    "end": {
+      "dialog": {
+        "text": "I knew it !"
+      }
+    }
+  }
+}

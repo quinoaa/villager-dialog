@@ -1,0 +1,73 @@
+{
+  "first": "root",
+  "dialogs": {
+    "root": {
+      "dialog": {
+        "text": "I have a baked some breads. Would you like some ?"
+      },
+      "choices": [
+        {
+          "dialog": {
+            "text": "Sure"
+          },
+          "goto": "yes"
+        },
+        {
+          "dialog": {
+            "text": "No thanks"
+          },
+          "goto": "no"
+        }
+      ]
+    },
+    "no": {
+      "dialog": {
+        "text": "Oh, okay... (goes away sadly)"
+      }
+    },
+    "yes": {
+      "type": "villagerdialog:reward",
+      "dialog": {
+        "text": "Perfect, take some bread !"
+      },
+      "rewards": [
+        {
+          "id": "bread",
+          "Count": 1
+        }
+      ],
+      "next": "advice"
+    },
+    "advice": {
+      "dialog": {
+        "text": "Did you like it ?"
+      },
+      "choices": [
+        {
+          "dialog": {
+            "text": "Delicious !"
+          },
+          "goto": "more"
+        },
+        {
+          "dialog": {
+            "text": "Disgusting !"
+          },
+          "goto": "no"
+        }
+      ]
+    },
+    "more": {
+      "type": "villagerdialog:reward",
+      "dialog": {
+        "text": "Glad you like it ! Take some more !"
+      },
+      "rewards": [
+        {
+          "id": "bread",
+          "Count": 32
+        }
+      ]
+    }
+  }
+}

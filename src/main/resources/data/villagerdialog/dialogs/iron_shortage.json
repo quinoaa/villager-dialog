@@ -1,0 +1,55 @@
+{
+  "first": "root",
+  "dialogs": {
+    "root": {
+      "dialog": {
+        "text": "I'm making an armor but my order still hasn't arrived. I still need 32 iron ingot, I wonder what happened. I have paid 16 emeralds for that !"
+      },
+      "choices": [
+        {
+          "dialog": {
+            "text": "I have that if you want"
+          },
+          "goto": "yes"
+        },
+        {
+          "dialog": {
+            "text": "No thanks"
+          },
+          "goto": "no"
+        }
+      ]
+    },
+    "no": {
+      "dialog": {
+        "text": "Oh, okay... (goes away sadly)"
+      }
+    },
+    "yes": {
+      "type": "villagerdialog:request",
+      "dialog": {
+        "text": "Really ? I really need it fast !"
+      },
+      "request": [
+        {
+          "id": "iron_ingot",
+          "Count": 32
+        }
+      ],
+      "accept": "give",
+      "decline": "no"
+    },
+    "give": {
+      "type": "villagerdialog:reward",
+      "dialog": {
+        "text": "Oh thanks ! Here is 22 emeralds, I have given you some extra."
+      },
+      "rewards": [
+        {
+          "id": "emerald",
+          "Count": 22
+        }
+      ]
+    }
+  }
+}

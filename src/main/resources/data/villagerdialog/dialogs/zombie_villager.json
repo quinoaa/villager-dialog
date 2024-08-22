@@ -1,0 +1,62 @@
+{
+  "first": "root",
+
+  "dialogs": {
+    "root": {
+      "dialog": {
+        "text": "My friend has been infected by a zombie ! I have no idea where I can find medicine for cure."
+      },
+      "choices": [
+        {
+          "goto": "explain",
+          "dialog": {
+            "text": "Can I help ?"
+          }
+        }
+      ]
+    },
+
+    "explain": {
+      "type": "villagerdialog:request",
+      "dialog": {
+        "text": "Sure ! Would you have a golden apple and a weakness splash potion ? "
+      },
+      "request": [
+        {
+          "id": "golden_apple",
+          "Count": 1
+        },
+        {
+          "id": "splash_potion",
+          "Count": 1,
+          "tag": {
+            "Potion":"minecraft:weakness"
+          }
+        }
+      ],
+      "accept": "yes",
+      "decline": "no"
+    },
+
+
+    "no": {
+      "dialog": {
+        "text": "I guess I'll have to find a way to get the items then !"
+      }
+    },
+
+
+    "yes": {
+      "type": "villagerdialog:reward",
+      "dialog": {
+        "text": "Thanks a lot ! Here's a reward."
+      },
+      "rewards": [
+        {
+          "id": "diamond",
+          "Count": 2
+        }
+      ]
+    }
+  }
+}
