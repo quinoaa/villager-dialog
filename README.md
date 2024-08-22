@@ -52,3 +52,7 @@ A dialog follows a scheme: [Example](https://github.com/quinoaa/villager-dialog/
   }
 }
 ```
+
+## Showcase
+
+[![Showcase video](https://img.youtube.com/vi/hVk9v3b30iQ/0.jpg)](https://youtu.be/hVk9v3b30iQ)
